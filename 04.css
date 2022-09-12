@@ -1,7 +1,7 @@
-body {
-	background: limegreen;
+@import '04-2.css';
+body{
+    background-color: green;
 }
-
 p {
-	color: rgb(141, 141, 196);
+    color: orange;
 }
