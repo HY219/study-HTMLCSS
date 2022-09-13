@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin: 0;
+        } */
+        header{
+            background-color: red;
+        }
+        /* CSS우선순위 -> id > class > 선택자 > 아래있는 코드 */
+        .special-text{
+            font-size: 25px;
+            color: mediumpurple
+        }
+        section >.special-text{ /*부모-자식 관계, 띄어쓰기 주의*/
+            /* font-size: 16px; */
+            font-size: 1rem;
+        }
+        p{
+            color:red;
+        }
+        /* .special-text{
+            font-size: 25px;
+            color: mediumpurple
+        } */
+        #page-header{
+            border: 10px solid green; /* 테두리: 선의 두깨 색깔 */
+        }
+        .info-list li{
+            color:pink;
+        }
+        .info-list__item{
+            color:red;
+        }
+        .info-list__item--active{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header id="page-header">
+            <h1>안녕하세요!</h1>
+        </header>
+        <section>
+            <h2>섹션1</h2>
+            <p class="special-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maxime laudantium voluptatem illo officiis facere aperiam, blanditiis culpa eum dignissimos, ut maiores ex voluptatibus illum? Porro eius debitis facere beatae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maxime laudantium voluptatem illo officiis facere aperiam, blanditiis culpa eum dignissimos, ut maiores ex voluptatibus illum? Porro eius debitis facere beatae.</p>
+            <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maxime laudantium voluptatem illo officiis facere aperiam, blanditiis culpa eum dignissimos, ut maiores ex voluptatibus illum? Porro eius debitis facere beatae.</p>
+            </div>
+        </section>
+        <section>
+            <h2>섹션2</h2>
+            <p class="special-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maxime laudantium voluptatem illo officiis facere aperiam, blanditiis culpa eum dignissimos, ut maiores ex voluptatibus illum? Porro eius debitis facere beatae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maxime laudantium voluptatem illo officiis facere aperiam, blanditiis culpa eum dignissimos, ut maiores ex voluptatibus illum? Porro eius debitis facere beatae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, maxime laudantium voluptatem illo officiis facere aperiam, blanditiis culpa eum dignissimos, ut maiores ex voluptatibus illum? Porro eius debitis facere beatae.</p>
+            <ul class = "info-list">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <ul class = "info-list">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            
+        </section>
+        <p class="special-text">
+            섹션의 형제 문단
+        </p>
+    </article>
+    
+</body>
+</html>
