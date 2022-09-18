@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<style>
+    body{
+        font-size: 20px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    article {
+        font-size: 0;
+        background: yellow;
+    }
+    section{
+        vertical-align: top;
+        display: inline-block;
+        /*width: 100%;*/ /*이렇게 사용하지 않도록한다. 어차피 자동 100% & 가로스크롤 생김 */
+        font-size: 20px;
+    }
+    .a{
+        /* width: 30%; */
+        width: calc(70% - 10px);
+        background: dodgerblue;
+    }
+    .b{
+        /* width: 70%; */
+        width: calc(70% - 10px);
+        background: greenyellow;
+    }
+</style>
+<body>
+    <article>
+        <section class="a">
+            Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Molestias at laboriosam cumque, omnis corrupti amet aut nam rem doloremque fugiat eveniet! Repudiandae nostrum fugit exercitationem blanditiis voluptate molestiae. Excepturi, earum!
+        </section><section class="b"><!--태그 사이의 띄어쓰기도 공백생김-->
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias at laboriosam cumque, omnis corrupti amet aut nam rem doloremque fugiat eveniet! Repudiandae nostrum fugit exercitationem blanditiis voluptate molestiae. Excepturi, earum!
+        </section>
+    </article>
+<section class="a">
+</body>
+</html>
